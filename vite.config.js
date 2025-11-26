@@ -3,5 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './'
+  base: '/dna-sequence-analyzer/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  }
 })
